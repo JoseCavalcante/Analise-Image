@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+agno
+google-generativeai
+pillow
+python-dotenv
+streamlit
+requests

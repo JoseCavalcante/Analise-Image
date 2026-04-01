@@ -1,0 +1,26 @@
+# Chaves de API e Variáveis de Ambiente (CRÍTICO)
+.env
+
+# Ambientes Virtuais e Dependências
+venv/
+.venv/
+node_modules/
+package-lock.json
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pastas de Arquivos Temporários de Imagens dos Usuários
+upload_img_enviadas/
+
+# Logs e Dados de Sessão
+*.log
+.coverage
+htmlcov/
+
+# Configurações Específicas de Ferramentas
+.vscode/
+.DS_Store
