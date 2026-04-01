@@ -19,8 +19,9 @@ COPY . /app/
 # A porta Padrão para expor a interface do Streamlit
 EXPOSE 8501
 
-# Dá permissão de execução ao script
-RUN chmod +x start.sh
+# Dá permissão de execução ao script e corrige as quebras de linha do Windows para Linux
+RUN sed -i 's/\r$//' start.sh && \
+    chmod +x start.sh
 
 # Executa o script que inicia tanto o backend quanto o frontend
 CMD ["./start.sh"]

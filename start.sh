@@ -8,7 +8,7 @@
 # O Render não exibe a porta 8000 da máquina para fora, então ela ficará segura
 # apenas rodando internamente no servidor.
 echo "Iniciando a API Interna (Uvicorn) na porta 8000..."
-uvicorn main:app --host 0.0.0.0 --port 8000 &
+uvicorn main:app --host 127.0.0.1 --port 8000 &
 
 # 2. Aguarda 3 segundos pro FastAPI 'respirar' e inicializar forte antes da UI
 sleep 3
