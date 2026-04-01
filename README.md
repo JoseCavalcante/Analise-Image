@@ -1,4 +1,4 @@
-# 🚀 Plataforma Antigravity de Análise de Imagens com IA
+# 🚀 Plataforma de Análise de Imagens com IA
 
 Uma poderosa API desenvolvida em Python e alimentada pelo **FastAPI**, **Agno** e **Google Gemini (Generative AI)**, projetada para a automação e análise avançada de imagens enviadas por usuários.
 
