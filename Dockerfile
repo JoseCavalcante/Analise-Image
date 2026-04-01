@@ -16,8 +16,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia TODO o resto dos arquivos do seu projeto do Windows para o Linux do Render
 COPY . /app/
 
-# A porta Padrão para expor a API
-EXPOSE 8000
+# A porta Padrão para expor a interface do Streamlit
+EXPOSE 8501
 
 # Dá permissão de execução ao script
 RUN chmod +x start.sh

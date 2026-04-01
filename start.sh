@@ -16,4 +16,4 @@ sleep 3
 # 3. Inicia o Streamlit (Frontend) na Porta que o Render determinar 
 # (Através da Variável de ambiente $PORT que o provedor injeta pra nós no Container)
 echo "Iniciando a Interface de Usuário (Streamlit) na porta externa $PORT..."
-streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0 
+streamlit run streamlit_app.py --server.port ${PORT:-8501} --server.address 0.0.0.0 
