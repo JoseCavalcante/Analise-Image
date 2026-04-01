@@ -19,5 +19,8 @@ COPY . /app/
 # A porta Padrão para expor a API
 EXPOSE 8000
 
-# Executa o FastAPI diretamente atrelando a porta correta injetada pela variável (usada no Render)
-CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Dá permissão de execução ao script
+RUN chmod +x start.sh
+
+# Executa o script que inicia tanto o backend quanto o frontend
+CMD ["./start.sh"]
